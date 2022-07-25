@@ -1,14 +1,233 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    font-family: 'Roboto';
+}
+
+
+body{
+    margin: 0;  
+    background-color: rgb(255, 223, 175);
+}
+
+
 #container{
-    color: red;
-    display: flex;
+    color: black;
+    display: grid;
+    grid-auto-flow: row;
     justify-content: center;
-    align-content: center; 
-    height: 100vh;   
+    justify-self: center;
+    align-content: center;    
+    margin: auto;
+    width: 80%;    
+    
+    
+}
+#restaurantTitleDiv{    
+    background-color: rgba(255, 178, 77, 0.822);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    padding-left: 200px;
+    padding-right: 30px;
+    box-shadow: 0px 5px 4px 0px gray;
+
+    
 }
 
-#cardSection{
+#restaurantTitlePara{
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    border-bottom: 8px rgb(111, 163, 163) solid;
+    border-radius: 28px;
+    box-shadow: 1px 8px 4px 0px gray;
+}
+#restaurantStuff{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
+    align-self: start;
+
+
+}
+#restaurantStuff>img{
+    width: 25%;
+    height: 25%;
+    border: none;
+}
+input[type=search]{
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    border-right: 2px solid black;
+    
 }
 
+
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 1.2rem;
+  
+}
+
+img{
+    width: 15%;
+    height: 100%;
+    border: 6px solid rgb(111, 163, 163);
+    border-radius: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+    border-radius: 8px;
+    width: 90rem;
+    padding: 25px;
+    
+    
+    text-align: center;
+    font-weight: bold; 
+
+    
+
+}
+
+#tabsDiv{
+    justify-self: start;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    position: fixed;
+    gap: 30px;
+    left: 0;
+    top: 200px;
+}
+.tabs{
+    width: 130px;
+    height: 50px;
+    background-color: white;
+    border: 3px solid rgb(111, 163, 163);
+    border-left: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 1px 8px 4px 0px gray;
+
+}
+.tabs:hover{
+    background-color:rgba(138, 201, 201);
+}
+
+.cards:nth-child(1){
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;   
+    
+    
+    
+}
+
+.cards:nth-child(2){
+    color: black;
+    font-weight: bold; 
+}
+
+
+
+
+
+.cards:nth-child(even){
+    background-color: rgb(185, 141, 111);
+    color: white;
+    box-shadow: 0px 4px 4px 1px gray;
+       
+}
+
+.cards>p{
+    padding: 30px;
+    padding-top: 0px;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+li{
+    border-right: 5px solid rgb(111, 163, 163);
+    padding: 12px;
+    padding-right: 18px;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(207, 144, 61);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#dishChef{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+#dishChef>img{
+    height: 5rem;
+    width: 5rem;
+}
+
+h1,h3{
+    border-bottom: 8px rgb(111, 163, 163) solid;
+    border-radius: 28px;
+}
+
+#dishDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+    padding: 50px;
+    
+    
+}
+#dishDiv>div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20%;
+    
+}
+
+#dishDiv>div>img{
+    height: 8rem;
+    width: 8rem;
+
+}
+#dishDiv>div>p{
+    margin: 0px;
+}
